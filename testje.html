@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3: Visualizing execution trace</title>
+        <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
+        <script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.js"></script>
+        <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+        <!--<script src="http://marvl.infotech.monash.edu/webcola/cola.v3.min.js"></script> -->
+        <script type="text/javascript" src="d3.min.js"></script>
+        <script type="text/javascript" src="js/ParsJson.js"></script>
+        <script type="text/javascript" src="js/states.js"></script>
+        <script type="text/javascript" src="js/visualization.js"></script>
+        <link rel="stylesheet" href="css/mystyles.css">
+    </head>
+    <body>
+        <div>
+            <form onsubmit="process_input();">
+                JSON input file: 
+                <input id="json_input" onchange="process_input()" type="file" accept=".json, application/json" />
+            </form>
+            <p>JSON Visualization.</p>
+            <svg width=100% height=100%></svg>
+        </div>
+    </body>
+</html>

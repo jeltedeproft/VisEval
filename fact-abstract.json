@@ -1,0 +1,70 @@
+{
+  "nodes" : [ {
+    "label" : "ev((letrec ((fact (lambda (n) (if (= n 0) 1 (* n (fact (- n 1))))))) (fact 5)))"
+  }, {
+    "label" : "ev((fact 5))"
+  }, {
+    "label" : "ev((if (= n 0) 1 (* n (fact (- n 1)))))"
+  }, {
+    "label" : "ev((= n 0))"
+  }, {
+    "label" : "ko(Bool)"
+  }, {
+    "label" : "ev(1)"
+  }, {
+    "label" : "ev((* n (fact (- n 1))))"
+  }, {
+    "label" : "ko(Int)"
+  }, {
+    "label" : "ev((fact (- n 1)))"
+  }, {
+    "label" : "ev((- n 1))"
+  }, {
+    "label" : "ko(Int)"
+  }, {
+    "label" : "ev((if (= n 0) 1 (* n (fact (- n 1)))))"
+  }, {
+    "label" : "ev(1)"
+  }, {
+    "label" : "ev((* n (fact (- n 1))))"
+  }, {
+    "label" : "ko(Int)"
+  } ],
+  "edges" : [ [ [ 1, {
+    "label" : ""
+  } ] ], [ [ 2, {
+    "label" : ""
+  } ] ], [ [ 3, {
+    "label" : ""
+  } ] ], [ [ 4, {
+    "label" : ""
+  } ] ], [ [ 5, {
+    "label" : ""
+  } ], [ 6, {
+    "label" : ""
+  } ], [ 12, {
+    "label" : ""
+  } ], [ 13, {
+    "label" : ""
+  } ] ], [ [ 7, {
+    "label" : ""
+  } ] ], [ [ 8, {
+    "label" : ""
+  } ] ], [ [ 9, {
+    "label" : ""
+  } ] ], [ [ 10, {
+    "label" : ""
+  } ] ], [ [ 11, {
+    "label" : ""
+  } ] ], [ [ 3, {
+    "label" : ""
+  } ] ], [ [ 14, {
+    "label" : ""
+  } ] ], [ [ 8, {
+    "label" : ""
+  } ] ], [ [ 7, {
+    "label" : ""
+  } ], [ 14, {
+    "label" : ""
+  } ] ] ]
+}
